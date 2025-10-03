@@ -1,7 +1,7 @@
 
 ### Descripcion
 
-Proyecto basado en el docuento de prueba tecnica para Autocity
+Proyecto basado en el documento de prueba tecnica para Autocity
 
 
 ### Configuración base del Proyecto | Project setup

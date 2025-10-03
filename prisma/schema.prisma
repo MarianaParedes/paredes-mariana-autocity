@@ -6,11 +6,11 @@
 
 generator client {
   provider = "prisma-client-js"
-  output   = "../generated/prisma"
+  output   = "../generated/prisma" //
 }
 
 datasource db {
-  provider = "sqlite"
+  provider = "mysql"
   url      = env("DATABASE_URL")
 }
 
@@ -18,10 +18,10 @@ model User {
   id       Int    @id @default(autoincrement())
   name     String
   lastname String
-  // dni 
-  email    String
+  dni      String
+  email    String @unique
   password String
 
   createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
+  updatedAt DateTime @updatedAt //le indica al gestor de BD que cuando se actualice ponga esa fecha
 }

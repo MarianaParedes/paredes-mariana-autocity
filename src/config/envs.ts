@@ -6,6 +6,7 @@ import * as joi from "joi";
 
 interface EnvVars{
     PORT: number;
+    DATABASE_URL: string;
 }
 
 
@@ -24,5 +25,6 @@ if( error ){
 const envVars: EnvVars = value;
 
 export const envs = {
-    port: envVars.PORT
+    port: envVars.PORT,
+    databaseUrl: envVars.DATABASE_URL
 }
